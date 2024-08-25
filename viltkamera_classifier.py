@@ -20,8 +20,8 @@ from fusion_model_v2 import FusionModel, EarlyFusionModel, MetadataModel
 from Conventional_models import *
 
 # Dataset
-from NINA_dataset_v2 import NINADataset
-from NINA_meta_dataset import NINAMetaDataset
+from data.NINA_dataset_v2 import NINADataset
+from data.NINA_meta_dataset import NINAMetaDataset
 
 # reduces the size of the dataset, respective to the identifier
 def reduce_sample_size(annotations, identifier, new_size):
