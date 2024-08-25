@@ -17,7 +17,7 @@ import gc
 
 # self defined functions
 from fusion_model_v2 import FusionModel, EarlyFusionModel, MetadataModel
-from Conventional_models import *
+from conventional_models import *
 
 # Dataset
 from data.NINA_dataset_v2 import NINADataset
