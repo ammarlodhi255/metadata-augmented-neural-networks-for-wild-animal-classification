@@ -41,7 +41,7 @@ This repository contains code for classifying camera trap images using various d
    ![NINA_WEB_INTERFACE](./imgs/nina_web.png)
 
 
-   - The dataset is highly imbalanced and many classes contained no images. Our curated dataset can be accessed from two links. The first link contains [images_part_1.zip]() file and the second contains rest of images in a file named [images_part_2.zip]().
+   - The dataset is highly imbalanced and many classes contained no images. Our curated dataset can be accessed from two links. The first link contains [images_part_1.zip](https://figshare.com/articles/dataset/images_part_1/26832043?file=48792940) file and the second contains rest of images in a file named [images_part_2.zip]().
    - Ensure your camera trap images are organized in the expected directory structure. Download the important json files from [JSON Files](). Each entry in the json "annotations" is a single image file. To get the associated image, append the "filename" of the json entry with the path to the image files. So say your images are stored at C:\NINA\images, and you have a filename "96624a46-4bc6-46c9-9770-370bf6d84718.jpg", then the correct image would be C:\NINA\images\96624a46-4bc6-46c9-9770-370bf6d84718.jpg.
    - Update the `bp` variable in the scripts to point to your dataset location.
    - Image variety and challenges are shown in the following pictures.
