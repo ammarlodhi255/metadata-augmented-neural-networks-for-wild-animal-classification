@@ -14,7 +14,7 @@ This repository contains code for classifying camera trap images using various d
 
 1. Clone the repository:
     ```
-    git clone https://github.com/ammarlodhi255/camera-trap-classification.git
+    git clone https://github.com/ammarlodhi255/metadata-augmented-neural-networks-for-wild-animal-classification.git
     ```
     ```
     cd camera-trap-classification
