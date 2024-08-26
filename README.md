@@ -4,7 +4,7 @@ This repository contains code for classifying camera trap images using various d
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [Usage](#usage)
+2. [Usage and Dataset](#usage_and_dataset)
 3. [File Descriptions](#file-descriptions)
 4. [Model Weights](#model_weights)
 5. [License](#license)
@@ -34,7 +34,7 @@ This repository contains code for classifying camera trap images using various d
 
    Note: If you're using GPU acceleration, ensure you have the appropriate CUDA toolkit installed.
 
-## Usage
+## Usage and Dataset
 
 1. Preparing the dataset:
    - The dataset is collected from NINA Viltkamera dataset. It contains 170,000 sample images along with metadata from the [NINA website](https://viltkamera.nina.no/).
