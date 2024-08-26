@@ -1,6 +1,25 @@
 # Metadata Augmented Deep Neural Networks for Wild Animal Classification
 
-This repository contains code for classifying camera trap images using various deep learning models and metadata fusion techniques.
+This repository contains code for classifying camera trap images using various deep learning models and metadata fusion techniques. 
+
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [File Descriptions](#file-descriptions)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Contact](#contact)
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/camera-trap-classification.git
+```
+```
+cd camera-trap-classification
+```
 
 ## Files
 
