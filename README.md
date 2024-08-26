@@ -4,7 +4,7 @@ This repository contains code for classifying camera trap images using various d
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [Usage and Dataset](#usage_and_dataset)
+2. [Usage and Dataset](#usage-and-dataset)
 3. [File Descriptions](#file-descriptions)
 4. [Model Weights](#model_weights)
 5. [License](#license)
