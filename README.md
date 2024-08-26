@@ -14,13 +14,12 @@ This repository contains code for classifying camera trap images using various d
 ## Installation
 
 1. Clone the repository:
-
-```
-git clone https://github.com/yourusername/camera-trap-classification.git
-```
-```
-cd camera-trap-classification
-```
+    ```
+    git clone https://github.com/yourusername/camera-trap-classification.git
+    ```
+    ```
+    cd camera-trap-classification
+    ```
 
 2. Create and activate a virtual environment:
    ```
