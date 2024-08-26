@@ -9,7 +9,6 @@ This repository contains code for classifying camera trap images using various d
 4. [Model Weights](#model_weights)
 5. [License](#license)
 6. [Contributing](#contributing)
-7. [Contact](#contact)
 
 ## Installation
 
