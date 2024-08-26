@@ -70,6 +70,7 @@ All the model weights can be downloaded from the URL [model-weights](). You can 
 - `fusion_model_v2.py`: Defines fusion models combining image and metadata features.
 - `conventional_models.py`: Implements various deep learning architectures.
 - `evaluate_metadata_models.py`: Analyzes results from metadata-only experiments.
+- Additional code related to UMAP, extraction of scene attributes, and other processes described in the paper can be found in [src](./src) folder.
 
 ## License
 
