@@ -36,11 +36,11 @@ This repository contains code for classifying camera trap images using various d
 ## Usage and Dataset
 
 1. Preparing the dataset:
-   - The dataset is collected from NINA Viltkamera dataset. It contains 170,000 sample images along with metadata from the [NINA website](https://viltkamera.nina.no/).
+   - The dataset is collected from NINA Viltkamera dataset. It contains 170,000 sample images along with metadata from the [NINA website](https://viltkamera.nina.no/). Following is the NINA web interface.
 
-   [NINA_WEB_INTERFACE](./imgs/nina_web.png)
+   ![NINA_WEB_INTERFACE](./imgs/nina_web.png)
 
-   
+
    - The dataset is highly imbalanced and many classes contained no images. Our curated dataset can be accessed from two links. The first link contains [images_part_1.zip]() file and the second contains rest of images in a file named [images_part_2.zip]().
    - Ensure your camera trap images are organized in the expected directory structure. Download the important json files from [JSON Files](). Each entry in the json "annotations" is a single image file. To get the associated image, append the "filename" of the json entry with the path to the image files. So say your images are stored at C:\NINA\images, and you have a filename "96624a46-4bc6-46c9-9770-370bf6d84718.jpg", then the correct image would be C:\NINA\images\96624a46-4bc6-46c9-9770-370bf6d84718.jpg.
    - Update the `bp` variable in the scripts to point to your dataset location.
