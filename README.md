@@ -6,9 +6,10 @@ This repository contains code for classifying camera trap images using various d
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [File Descriptions](#file-descriptions)
-4. [License](#license)
-5. [Contributing](#contributing)
-6. [Contact](#contact)
+4. [Model Weights](#model_weights)
+5. [License](#license)
+6. [Contributing](#contributing)
+7. [Contact](#contact)
 
 ## Installation
 
@@ -21,38 +22,66 @@ git clone https://github.com/yourusername/camera-trap-classification.git
 cd camera-trap-classification
 ```
 
-## Files
+2. Create and activate a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-### metadata_classifier.py
-- Implements a metadata-only classifier for camera trap images
-- Handles data loading, preprocessing, and model training
-- Performs experiments with different feature combinations and class selections
-- Evaluates model performance using confusion matrices and various metrics
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
 
-### fusion_model_v2.py
-- Defines fusion models that combine image and metadata features
-- Includes implementations for late fusion, early fusion, and metadata-only models
-
-### conventional_models.py
-- Contains implementations of various conventional deep learning models
-- Includes ResNet, VGG, AlexNet, Inception, EfficientNet, and Vision Transformer (ViT) architectures
-- These models are adapted to work with both image and metadata inputs
-
-### viltkamera_classifier.py
-- Main script for training and evaluating camera trap image classifiers
-- Supports multiple model architectures and fusion techniques
-- Handles data loading, augmentation, and preprocessing
-- Implements training loops, model evaluation, and result logging
-
-### evaluate_metadata_models.py
-- Script for evaluating the performance of metadata-only models
-- Analyzes results from different feature combinations and class selections
-- Generates visualizations and statistics to compare model performances
+   Note: If you're using GPU acceleration, ensure you have the appropriate CUDA toolkit installed.
 
 ## Usage
 
-To train and evaluate models, run the `viltkamera_classifier.py` script. You can modify the model configurations, data preprocessing, and evaluation metrics within the script.
+1. Preparing the dataset:
+   - The dataset is collected from NINA Viltkamera dataset. It contains 170,000 sample images along with metadata from the [NINA website](https://viltkamera.nina.no/).
+   - The dataset is highly imbalanced and many classes contained no images. Our curated dataset can be accessed at [Curated dataset]()
+   - Ensure your camera trap images are organized in the expected directory structure. Download the important json files from [JSON Files](). Each entry in the json "annotations" is a single image file. To get the associated image, append the "filename" of the json entry with the path to the image files. So say your images are stored at C:\NINA\images, and you have a filename "96624a46-4bc6-46c9-9770-370bf6d84718.jpg", then the correct image would be C:\NINA\images\96624a46-4bc6-46c9-9770-370bf6d84718.jpg.
+   - Update the `bp` variable in the scripts to point to your dataset location.
 
-For metadata-only experiments, use the `metadata_classifier.py` script. The `evaluate_metadata_models.py` script can be used to analyze the results of these experiments.
+2. Run the main classification script:
+   ```
+   python viltkamera_classifier.py
+   ```
 
-Note: Make sure to set the correct paths for your dataset and adjust hyperparameters as needed.
+3. For metadata-only experiments:
+   ```
+   python metadata_classifier.py
+   ```
+
+4. To evaluate metadata models:
+   ```
+   python evaluate_metadata_models.py
+   ```
+
+Modify the scripts as needed to adjust model configurations, data preprocessing steps, or evaluation metrics.
+
+## Model Weights
+All the model weights can be downloaded from the URL [model-weights](). You can load the weights and directly perform classification and inference on animal species.
+
+
+## Source Files Descriptions
+
+- `viltkamera_classifier.py`: Main script for training and evaluating image classifiers.
+- `metadata_classifier.py`: Implements a metadata-only classifier for experiments.
+- `fusion_model_v2.py`: Defines fusion models combining image and metadata features.
+- `conventional_models.py`: Implements various deep learning architectures.
+- `evaluate_metadata_models.py`: Analyzes results from metadata-only experiments.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
