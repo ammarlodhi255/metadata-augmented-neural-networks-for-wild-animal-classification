@@ -36,7 +36,7 @@ This repository contains code for classifying camera trap images using various d
 ## Usage and Dataset
 
 1. Preparing the dataset:
-   - The dataset is collected from NINA Viltkamera dataset. It contains 170,000 sample images along with metadata from the [NINA website](https://viltkamera.nina.no/). Following is the NINA web interface.
+   - The dataset is collected from NINA Viltkamera dataset. It contains 170,000 sample images along with metadata from the [NINA website](https://viltkamera.nina.no/). The webscrapping code is located inside of the file [webscrapper.js](./webscrapper.js). Following is the NINA web interface.
 
    ![NINA_WEB_INTERFACE](./imgs/nina_web.png)
 
